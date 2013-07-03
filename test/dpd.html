@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>DPD Pruebas</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="http://localhost:2403/dpd.js"></script>
+        <script type="text/javascript">
+            
+            login();
+            
+            function login() {
+                var user = {
+                    //email: 'hezarco@gmail.com',
+                    username: 'zzarcon',
+                    password: '123456'
+                };
+
+                dpd.users.login(user, function(response) {
+                    console.log(response);
+                    me();
+                });
+            }
+            
+            function me(){
+                dpd.users.me(function(response){
+                    console.log(response);
+                });
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

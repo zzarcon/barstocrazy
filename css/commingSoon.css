@@ -1,0 +1,21 @@
+/* line 1, commingSoon.scss */
+body {
+  background: url("../img/bg.jpg") no-repeat black !important;
+  background-position: bottom !important;
+}
+
+/* line 6, commingSoon.scss */
+.title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 12, commingSoon.scss */
+.container {
+  top: 330px !important;
+}
+
+/* line 15, commingSoon.scss */
+.email {
+  margin-top: -50px;
+}
