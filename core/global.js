@@ -43,7 +43,7 @@ define(['routie'], function() {
             'users/:name': routeCheck,
             '': routeCheck
         });
-
+        
         function routeCheck(data) {
             var path = this.path,
                     controller = path || "/";
@@ -51,7 +51,9 @@ define(['routie'], function() {
             controller = [Config.routes[controller]];
 
             console.log('routeCheck', path, controller);
-            require(controller);
+            require(controller,function(){
+                $('html').addClass('load');
+            });
         }
     }
 

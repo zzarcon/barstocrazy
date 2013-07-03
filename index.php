@@ -7,6 +7,5 @@
         <script data-main="core/main" src="lib/require.js"></script>
     </head>
     <body>
-        
     </body>
 </html>

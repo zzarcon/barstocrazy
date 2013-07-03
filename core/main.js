@@ -12,7 +12,10 @@ requirejs.config({
         controllers: '../controllers',
         css3CountDown: '../lib/css3-countdown-master',
         jQuery: '../lib/jquery-1.10.1',
-        routie: '../lib/routie'
+        routie: '../lib/routie',
+        text: '../lib/text',
+        views: '../views',
+        mustache: '../lib/mustache'
     },
     shim: {
         'global': ['jQuery']
