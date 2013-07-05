@@ -1,1 +1,27 @@
 USER
+<hr>
+username: {{username}} <br>
+email: {{email}} <br>
+<hr>
+Relacion: 
+{{#follow}}
+    <button>Dejar de seguir</button>
+{{/follow}}
+{{^follow}}
+    <button>Seguir</button>
+{{/follow}}
+
+<hr>
+<div class="box">
+    following: 
+    {{#following}}
+        <a href="#users/{{username}}" ><div>{{username}}</div></a>
+    {{/following}}
+</div>
+<hr>
+<div class="box">
+    followers: 
+    {{#followers}}
+    <a href="#users/{{username}}" ><div>{{username}}</div></a>
+    {{/followers}}
+</div>

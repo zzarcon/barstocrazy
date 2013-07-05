@@ -15,7 +15,11 @@ requirejs.config({
         routie: '../lib/routie',
         text: '../lib/text',
         views: '../views',
-        mustache: '../lib/mustache'
+        styles: '../styles',
+        lib: '../lib',
+        mustache: '../lib/mustacheZ',
+        underscore: '../lib/underscore',
+        dpd: location.origin + ':2403/dpd'//Comprobar que funcione en produccion
     },
     shim: {
         'global': ['jQuery']

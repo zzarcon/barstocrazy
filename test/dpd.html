@@ -7,8 +7,19 @@
         <script type="text/javascript" src="http://localhost:2403/dpd.js"></script>
         <script type="text/javascript">
             
-            login();
+            me();
+            //setTimeout(login,2000);
+            //login();
+            //get();
+            //post();
             
+            function get(){
+                dpd.users.get({
+                    email: 'hezarco@gmail.com'
+                },function(response){
+                    console.log('get',response.length,response);
+                });
+            }
             function login() {
                 var user = {
                     //email: 'hezarco@gmail.com',
@@ -17,20 +28,26 @@
                 };
 
                 dpd.users.login(user, function(response) {
-                    console.log(response);
+                    console.log('login',response);
                     me();
                 });
             }
             
             function me(){
                 dpd.users.me(function(response){
-                    console.log(response);
+                    console.log('me',response);
                 });
             }
             
             function post(){
-                dpd.users.post({
-                    username: ''
+                var user = {
+                    email: 'zarco@gmail.com',
+                    username: 'zarco',
+                    password: '123456'
+                };
+                
+                dpd.users.post(user,function(response,error){
+                    console.log('post',response,error);
                 });
             }
         </script>

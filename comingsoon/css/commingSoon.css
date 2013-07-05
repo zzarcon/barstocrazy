@@ -19,3 +19,22 @@ body {
 .email {
   margin-top: -50px;
 }
+
+/* line 19, commingSoon.scss */
+input {
+  height: 24px;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  border: 1px solid #555;
+}
+
+/* line 26, commingSoon.scss */
+button {
+  background: #960049;
+  border: 1px solid #555;
+  border-radius: 0 15px 15px 0;
+  padding: 5px 8px;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  margin-left: -2px;
+}
